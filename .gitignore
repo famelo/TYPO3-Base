@@ -109,3 +109,5 @@ crashlytics-build.properties
 /index.php
 /typo3conf/ENABLE_INSTALL_TOOL
 /fileadmin/user_upload
+Build
+dynamicReturnTypeMeta.json
