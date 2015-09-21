@@ -1,6 +1,20 @@
 # TYPO3 Base
 
 
+## Installation
+
+1. clone repository
+
+```
+git clone git@github.com:famelo/TYPO3-Base.git
+```
+
+2. create database and import ```typo3conf/database.sql```
+
+3. copy ```typo3conf/AdditionalConfiguration.php.example``` to ```typo3conf/AdditionalConfiguration.php``` and set configuration for local machine
+
+4. login with ```admin:password``` and change the admin password
+
 
 ### Structure of the template Extension
 
