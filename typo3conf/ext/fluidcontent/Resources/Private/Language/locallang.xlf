@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="fluidcontent" date="2014-04-17T12:20:00+01:00">
+		<header/>
+		<body>
+			<trans-unit id="default">
+				<source>default</source>
+			</trans-unit>
+			<trans-unit id="pages.no_content_types">
+				<source>No available content types</source>
+			</trans-unit>
+			<trans-unit id="pages.tab.configuration">
+				<source>Configuration</source>
+			</trans-unit>
+			<trans-unit id="pages.tab.content_settings">
+				<source>Content settings</source>
+			</trans-unit>
+			<trans-unit id="pages.tab.element_type">
+				<source>Element type</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform">
+				<source>Element Configuration</source>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_fed_fcecontentarea">
+				<source>Content area</source>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_fed_fcefile">
+				<source>Fluid Content type</source>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_fed_fcefile.emptyMessage">
+				<source>Fluid Content type not selected - edit this element in the TYPO3 backend to fix this!</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

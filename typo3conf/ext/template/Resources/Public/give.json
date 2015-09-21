@@ -1,0 +1,7 @@
+{
+  "postProcessCommands": [
+    {
+      "command": "bower install"
+    }
+  ]
+}

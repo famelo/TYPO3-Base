@@ -1,0 +1,9 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:typo3conf/ext/template/Configuration/TypoScript/Setup/Pages.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:typo3conf/ext/template/Configuration/TypoScript/Setup/Bootstrap.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:typo3conf/ext/template/Configuration/TypoScript/Setup/Content.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:typo3conf/ext/template/Configuration/TypoScript/Setup/Language.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:typo3conf/ext/template/Configuration/TypoScript/Setup/Navigation.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:typo3conf/ext/template/Configuration/TypoScript/Setup/SEO.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:typo3conf/ext/template/Configuration/TypoScript/Setup/Extensions.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:typo3conf/ext/template/Configuration/TypoScript/Setup/Gridelements.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:typo3conf/ext/template/Configuration/TypoScript/Setup/Form.ts">

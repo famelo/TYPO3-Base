@@ -1,0 +1,29 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+{namespace flux=FluidTYPO3\Flux\ViewHelpers}
+<f:layout name="Content" />
+
+<f:section name="Configuration">
+	<flux:form wizardTab="Grids" id="grid-50-50" label="Grid: 50/50">
+		<flux:grid>
+			<flux:grid.row>
+				<flux:grid.column name="left" label="Left" />
+				<flux:grid.column name="right" label="Right" />
+			</flux:grid.row>
+		</flux:grid>
+	</flux:form>
+</f:section>
+
+<f:section name="Main">
+	<div class="row">
+		<div class="col-md-6">
+			<flux:content.render area="left" />
+		</div>
+		<div class="col-md-6">
+			<flux:content.render area="right" />
+		</div>
+	</div>
+</f:section>
+
+<f:section name="Preview">
+	<flux:widget.grid />
+</f:section>

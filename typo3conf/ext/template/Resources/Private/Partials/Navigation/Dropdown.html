@@ -1,0 +1,26 @@
+<ul class="nav nav-pills pull-right">
+	<f:for each="{menu}" as="page" iteration="iteration">
+		<f:if condition="{page.hasSubPages}">
+			<f:then>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle {page.class}" data-toggle="dropdown">{page.title} <b class="caret"></b></a>
+						<v:page.menu pageUid="{page.uid}" useShortcutData="TRUE">
+							<ul class="dropdown-menu">
+								<f:for each="{menu}" as="subPage" iteration="iteration">
+									<li class="{page.class}">
+										<a href="{subPage.link}" class="{subPage.class}">{subPage.title}</a>
+									</li>
+								</f:for>
+							</ul>
+						</v:page.menu>
+					<b class="caret-out"></b>
+				</li>
+			</f:then>
+			<f:else>
+				<li class="{page.class}">
+					<a href="{page.link}" class="{page.class}">{page.title}</a>
+				</li>
+			</f:else>
+		</f:if>
+	</f:for>
+</ul>

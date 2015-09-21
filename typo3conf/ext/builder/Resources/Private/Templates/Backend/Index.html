@@ -1,0 +1,68 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+
+<f:layout name="Backend" />
+
+<f:section name="ButtonsLeft">
+
+</f:section>
+
+<f:section name="FunctionsLeft">
+	{csh -> f:format.raw()}
+</f:section>
+
+<f:section name="Content">
+	<f:render section="{view}" arguments="{_all}" />
+</f:section>
+
+<f:section name="Index">
+	<h1>{f:translate(key: 'header.syntax')}</h1>
+	<f:render section="SyntaxChecker" arguments="{_all}" />
+</f:section>
+
+<f:section name="SyntaxChecker">
+	<f:form action="syntax">
+		<fieldset>
+			<legend>{f:translate(key: 'header.validators')}</legend>
+			<div class="form-group">
+			<label>{f:translate(key: 'extensionselector')}</label>
+			<f:render section="ExtensionSelector" arguments="{_all}" />
+			</div>
+			<div class="form-group">
+			<label>{f:translate(key: 'typeselector')}</label>
+			</div>
+			<div class="form-group">
+				<label>{f:translate(key: 'syntax.php')}</label>
+				<f:form.checkbox name="syntax[{formats -> f:count()}]" value="php" checked="checked" class="checkbox" />
+			</div>
+			<div class="form-group">
+				<label>{f:translate(key: 'syntax.fluid')}</label>
+				<f:form.checkbox name="syntax[fluid]" value="fluid" checked="checked" class="checkbox" />
+			</div>
+			<div class="form-group">
+				<label>{f:translate(key: 'syntax.profile')}</label>
+				<f:form.checkbox name="syntax[profile]" value="profile" checked="checked" class="checkbox" />
+			</div>
+			<f:render section="FormatSelector" arguments="{_all}" />
+			<button name="go" class="btn btn-primary">
+				<span class="t3-icon fa fa-play-circle"> </span>
+				{f:translate(key: 'submit.validate')}
+			</button>
+		</fieldset>
+	</f:form>
+</f:section>
+
+<f:section name="ExtensionSelector">
+	<f:form.select name="extensions[]" options="{extensionSelectorOptions}" value="{extensionSelectorOptions}" class="form-control"/>
+</f:section>
+
+<f:section name="FormatSelector">
+	<ul>
+		<f:for each="{formats}" as="formatIsPreselected" key="formatName" iteration="iteration">
+			<li>
+				<label class="inline">
+					<f:form.checkbox name="formats[{iteration.index}]" value="{formatName}" checked="{f:if(condition: formatIsPreselected, then: 'checked')}" /> {formatName}
+				</label>
+			</li>
+		</f:for>
+	</ul>
+</f:section>

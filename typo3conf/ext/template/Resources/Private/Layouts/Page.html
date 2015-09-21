@@ -1,0 +1,10 @@
+<f:layout name="Page" />
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+
+<div class="container">
+	<v:page.menu entryLevel="0" useShortcutData="TRUE">
+		<f:render partial="Navigation/Navbar" arguments="{menu: menu}" />
+	</v:page.menu>
+
+	<f:render section="Content" />
+</div>

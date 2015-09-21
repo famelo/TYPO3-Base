@@ -1,0 +1,41 @@
+<f:be.container
+	includeCssFiles="{
+		0:'{f:uri.resource(path:\'Css/ui-lightness/jquery-ui-1.10.3.custom.min.css\')}',
+		1:'{f:uri.resource(path:\'Css/main.css\')}'
+	}"
+	includeRequireJsModules="{
+		0:'TYPO3/CMS/Viewpage/Main'
+	}">
+	<div class="typo3-fullDoc">
+		<div id="typo3-docheader">
+			<div class="typo3-docheader-functions">
+				<form>
+					<label for="width">
+						<f:translate key="width" />
+					</label>
+					<f:form.select options="{widths}" id="width" name="width" />
+				</form>
+			</div>
+			<div class="typo3-docheader-buttons">
+				<div class="left">
+					<f:be.buttons.icon uri="{url}"
+						additionalAttributes="{onclick: 'window.open(this.href,\'newTYPO3frontendWindow\').focus();return false;'}"
+						icon="actions-document-view" title="{f:translate(key: 'LLL:EXT:lang/locallang_core.xlf:labels.showPage')}"
+					/>
+				</div>
+				<div class="right">
+					<f:be.buttons.icon
+							uri="javascript:document.getElementById('tx_viewpage_iframe').contentWindow.location.reload(true);"
+							icon="actions-system-refresh" title="{f:translate(key: 'refreshPage')}" />
+					<f:be.buttons.shortcut/>
+				</div>
+			</div>
+		</div>
+
+		<div id="typo3-docbody">
+			<div id="typo3-inner-docbody" class="tx_viewpage">
+				<f:render section="Content" />
+			</div>
+		</div>
+	</div>
+</f:be.container>

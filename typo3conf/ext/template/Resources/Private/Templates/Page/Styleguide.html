@@ -1,0 +1,41 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+{namespace flux=FluidTYPO3\Flux\ViewHelpers}
+<f:layout name="Page" />
+
+<f:section name="Configuration">
+    <flux:form id="styleguide" label="Styleguide">
+    </flux:form>
+</f:section>
+
+<f:section name="Content">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="styleguide">
+                <f:render partial="Styleguide/Typography" />
+            </div>
+        </div>
+        <div class="col-md-3">
+            <ul class="nav nav-sidebar">
+                <li><a href="#styleguide-typography">Typography</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.styleguide-example').each(function(){
+                var code = $('<code class="language-markup"></code>');
+                var pre = $('<pre class="styleguide-example-code"></pre>');
+                $(this).after(pre);
+                code.html($(this).html());
+                code.find('.styleguide-example-header').remove();
+                code.text(code.html().trim());
+                pre.append(code);
+            });
+        });
+    </script>
+</f:section>

@@ -1,0 +1,23 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+{namespace flux=FluidTYPO3\Flux\ViewHelpers}
+<f:layout name="Page" />
+
+<f:section name="Configuration">
+    <flux:form id="standard" label="Standard">
+    </flux:form>
+    <flux:grid>
+        <flux:grid.row>
+            <flux:grid.column colPos="1" name="Header" />
+        </flux:grid.row>
+        <flux:grid.row>
+            <flux:grid.column colPos="0" name="Main Content" />
+        </flux:grid.row>
+        <flux:grid.row>
+            <flux:grid.column colPos="2" name="Footer Content" />
+        </flux:grid.row>
+    </flux:grid>
+</f:section>
+
+<f:section name="Content">
+    <v:content.render column="0" />
+</f:section>

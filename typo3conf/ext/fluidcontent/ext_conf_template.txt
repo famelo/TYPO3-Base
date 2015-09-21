@@ -1,0 +1,5 @@
+# cat=basic/enable; type=string; label=Set the width  of the content element icon:Supports c (crop) and m (keeping the aspect ratio)
+iconWidth = 24m
+
+# cat=basic/enable; type=string; label=Set the height of the content element icon:Supports c (crop) and m (keeping the aspect ratio)
+iconHeight = 24m

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="template" date="2015-09-21T21:32:48+02:00">
+		<header/>
+		<body>
+			<trans-unit id="flux.fluidcontent">
+				<source>Fluid content element example</source>
+			</trans-unit>
+			<trans-unit id="flux.fluidcontent.description">
+				<source>Description can be entered in LLL file locallang.xlf of extension template</source>
+			</trans-unit>
+			<trans-unit id="flux.fluidpage">
+				<source>Standard fluid page</source>
+			</trans-unit>
+			<trans-unit id="flux.fluidpage.description">
+				<source>Description can be entered in LLL file locallang.xlf of extension template</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

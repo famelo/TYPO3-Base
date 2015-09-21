@@ -1,0 +1,45 @@
+h1.styleguide {
+	border-bottom: 1px solid #dedede;
+	margin-bottom: 20px;
+	margin-top: 60px;
+	padding-bottom: 20px;
+	text-align: right;
+}
+
+.styleguide-example {
+	padding: 20px;
+	border: 1px solid #dedede;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.styleguide-example-header {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #efefef;
+	padding: 5px 10px;
+	font-weight: bold;
+	color: #777;
+}
+
+.styleguide-example + .styleguide-example-code {
+	margin-top: -21px;
+	margin-bottom: 20px;
+	border-radius: 0;
+}
+
+.styleguide-example-code {
+	.token.tab,
+	.token.lf {
+		visibility: hidden;
+	}
+}
+
+.styleguide pre[class*=language-]>code[data-language] {
+	overflow: visible;
+}
+
+.styleguide pre[class*=language-]>code[data-language]::before {
+	content: '';
+}

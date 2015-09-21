@@ -1,0 +1,18 @@
+config {
+
+	# The <base> tag in the header of the document which is used by RealURL
+	absRefPrefix = /
+
+	# Search. This should be disabled if you are not using Indexed search!
+	index_enable = 1
+	index_externals = 1
+
+	# Language and locallization
+	language = de
+	locale_all = de_DE
+
+	# Template Extension Path
+	template_path = typo3conf/ext/template
+
+	title = TYPO3 Template
+}
