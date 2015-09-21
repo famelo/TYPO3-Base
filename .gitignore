@@ -100,7 +100,7 @@ crashlytics-build.properties
 #############################
 /fileadmin/_temp_/
 /fileadmin/_processed_/
-/uploads/
+/uploads/tx_extensionbuilder/
 /typo3conf/temp_CACHED*
 /typo3conf/temp_fieldInfo.php
 /typo3conf/localconf_local.php
