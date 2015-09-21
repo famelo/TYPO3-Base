@@ -7,11 +7,11 @@ return array(
 		'loginSecurityLevel' => 'rsa',
 	),
 	'DB' => array(
-		'database' => 'typo3-template',
-		'host' => 'localhost',
+		'database' => '',
+		'host' => '',
 		'password' => '',
 		'socket' => '',
-		'username' => 'root',
+		'username' => '',
 	),
 	'EXT' => array(
 		'extConf' => array(
