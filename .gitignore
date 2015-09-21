@@ -106,7 +106,6 @@ crashlytics-build.properties
 /typo3conf/localconf_local.php
 /typo3temp/
 /typo3_src
-/index.php
 /typo3conf/ENABLE_INSTALL_TOOL
 /fileadmin/user_upload
 Build
